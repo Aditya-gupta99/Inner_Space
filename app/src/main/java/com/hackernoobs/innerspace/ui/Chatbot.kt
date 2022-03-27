@@ -90,18 +90,22 @@ class chatbot : AppCompatActivity() {
                 {
                     startActivity(Intent(this,SucideActivity::class.java))
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    score=0
                     finish()
                 }
                 else if(score<8 && score >0)
                 {
                     startActivity(Intent(this,NormalActivity::class.java))
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    score=0
                     finish()
                 }
                 else if(score <0)
                 {
                     startActivity(Intent(this,GoodActivity::class.java))
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    score=0
+                    
                     finish()
                 }
             }
